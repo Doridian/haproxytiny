@@ -1,3 +1,3 @@
 #!/bin/sh
 set -x
-exec haproxy -W -db -q -c -f /etc/haproxy/haproxy.cfg
+exec haproxy -W -db -f /etc/haproxy/haproxy.cfg
