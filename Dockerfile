@@ -4,5 +4,5 @@ RUN apk add --no-cache haproxy
 
 VOLUME [ "/etc/haproxy" ]
 
-COPY entrypoint.sh /entrypoint.sh
-ENTRYPOINT [ "/entrypoint.sh" ]
+ENTRYPOINT [ "haproxy", "-W", "-db", "-f", "/etc/haproxy/haproxy.cfg" ]
+CMD [ ]
